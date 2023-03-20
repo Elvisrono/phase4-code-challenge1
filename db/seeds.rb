@@ -1,4 +1,4 @@
-puts "🍕 Seeding restaurants..."
+puts "Seeding restaurants..."
 Restaurant.create!([
   {
     name: "Sottocasa NYC",
@@ -14,7 +14,7 @@ Restaurant.create!([
   }
 ])
 
-puts "🍕 Seeding pizzas..."
+puts "Seeding pizzas..."
 Pizza.create!([
   {
     name: "Cheese",
@@ -58,7 +58,7 @@ Pizza.create!([
   }
 ])
 
-puts "🍕 Adding pizzas to restaurants..."
+puts " Adding pizzas to restaurants..."
 Restaurant.all.each do |restaurant|
   rand(1..5).times do
     # get a random pizza
@@ -68,4 +68,4 @@ Restaurant.all.each do |restaurant|
   end
 end
 
-puts "🍕 Done seeding!"
+puts " Done seeding!"
